@@ -1,0 +1,176 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+
+h1, .entry-content h1, h2 .entry-content h2{
+    color:#730814 ;
+}
+.gs_logo_overflow--hidden {
+    background-color:#f9f3df !important;
+}
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]), .wp-block-cover.has-background-dim:not([class*=-background-color]){
+    width: 85vw;
+}
+.wp-block-cover, .wp-block-cover-image{
+    width: 75vw;
+    margin: 0 auto;
+}
+.has-large-font-size{
+    font-size: 1.11111rem;
+}
+
+.gs_logo_overflow--hidden {
+    border-top: solid  1px #730814;
+    border-bottom: solid  1px #730814;
+}
+.gs_logo_container .gs_logo_title{
+    margin: -12px 0 0  ;
+}
+
+.edit-post-visual-editor .block-editor-block-list__block h4{
+    margin-top:0px;
+}
+.ast-site-header-cart .ast-woo-header-cart-info-wrap{
+    font-weight: 200;
+    font-family: "Aref Ruqaa";
+}
+.wp-block-image{
+    margin-bottom: -1em;
+}
+.gs_logo_overflow--hidden , .gs_logo_single.gs_logo-single--flex-center{
+    height: 5em;
+}
+.gs_logo_overflow--hidden{
+    border-top: solid 2px #730814;
+    border-bottom: solid 2px #730814;
+}
+.gs_logo_single.gs_logo-single--flex-center{
+   margin-bottom: 3em;
+}
+.wp-block-column p , .entry-content p {
+    margin-bottom: 0px;
+}
+.gs_logo_container .gs_logo_title{
+    margin-top: -14px !important;
+}
+.woocommerce-product-gallery__image .flex-active-slide{
+    border: 1px solid #730814;
+box-shadow: gray 5px 5px;
+}
+ div .astra-shop-summary-wrap{
+     text-align: center !important;
+ }
+ :root .has-white-background-color {
+    background-color: #fffcf2;
+ }
+ .site-header-section-left .ast-search-menu-icon.slide-search .search-form .search-field{
+     height: 2rem;
+ }
+ .woocommerce ul.products li.product .star-rating, .woocommerce-page ul.products li.product .star-rating{
+     margin: 0 auto;
+     margin-bottom: 1.5em;
+ }
+   h4, .entry-content h4 {
+       color:#730814 ;
+   }
+   .wp-block-columns:first-child {
+    background: #fffcf2;
+     
+   }
+   .site-header .site-description{
+    color:#730814 ;
+   }
+   .woocommerce .woocommerce-breadcrumb{
+    display: none;
+   }
+   .woocommerce ul.products li.product.product-category>a, .woocommerce-page ul.products li.product.product-category>a{
+       height: 100%;
+   }
+   .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce-page ul.products li.product .woocommerce-loop-category__title{
+       background-color:#fffcf2 ;
+       display: none;
+   }
+   .woocommerce ul.products li.product.product-category>a, .woocommerce-page ul.products li.product.product-category>a{
+       margin-right: 3rem;
+       margin-left: 3rem;
+       border: 2px solid #730814;
+   }
+   .woocommerce ul.products li.product a img{
+       height: 100% !important;
+   }
+   .wp-block-jetpack-slideshow[data-autoplay=true] .wp-block-jetpack-slideshow_button-pause{
+    display: none !important;
+}
+
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next, .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev{
+display: none !important;
+}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets{
+display: none !important;
+}
+
+
+
+   /*  Media queries */
+@media only screen and (min-device-width : 1024px){
+    .wpsisac-slick-carousal .wpsisac-image-slide{
+    margin: 2rem;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .wpsisac-image-fit .wpsisac-image-slide-wrap img, .wpsisac-image-fit .wpsisac-slide-wrap img{ height:200px !important; }
+         
+        }
+        .wpsisac-slick-carousal.design-6 .slick-next,.wpsisac-slick-carousal.design-6 .slick-prev {
+            display: none !important;
+        }
+        .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_caption.gallery-caption {
+            background-color: transparent !important;
+            border: none;
+            color: #730814 !important;
+            left:40% !important;
+            font-family: 'Aref Ruqaa';
+            font-size: 1.5rem !important;
+        }
+        @media only screen and (max-width: 320px){
+            .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_caption.gallery-caption{
+                font-size: 1rem !important;
+                left: 24% !important;
+            }
+            .woocommerce .woocommerce-result-count{
+                display: none;
+            }
+        }
+        @media only screen and (min-width : 320px) and (max-width : 450px){
+            .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_caption.gallery-caption{
+                font-size: 1rem !important;
+                    left: 33% !important;
+            }
+        }
+        @media only screen and (min-width : 450px) and (max-width : 920px){
+            .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_caption.gallery-caption{
+            font-size: 1.5rem !important;
+                left: 29% !important;
+        }
+    }
+    @media only screen and (min-width : 920px){
+        .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_caption.gallery-caption{
+            font-size: 1.5rem !important;
+                left: 41% !important;
+        }
+    }
+    @media only screen and (max-width: 320px){
+    .woocommerce ul.products li.product a, .woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{
+        font-size: 0.8rem;
+    }
+}
+            
