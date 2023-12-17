@@ -51,6 +51,21 @@ if ( class_exists( 'Astra_Customizer_Config_Base' ) ) {
 				),
 
 				/**
+				* Link to the astra logo and site title settings.
+				*/
+				array(
+					'name'           => ASTRA_THEME_SETTINGS . '[logo-title-settings-link]',
+					'type'           => 'control',
+					'control'        => 'ast-customizer-link',
+					'section'        => 'astra-site-identity',
+					'priority'       => 100,
+					'link_type'      => 'section',
+					'is_button_link' => true,
+					'linked'         => 'title_tagline',
+					'link_text'      => __( 'Site Title & Logo Settings', 'astra' ),
+				),
+
+				/**
 				 * Option: Header Builder Tabs
 				 */
 				array(
@@ -63,23 +78,32 @@ if ( class_exists( 'Astra_Customizer_Config_Base' ) ) {
 				),
 
 				/**
-				 * Option: Display Title
+				 * Option: Header logo color.
 				 */
 				array(
-					'name'      => ASTRA_THEME_SETTINGS . '[display-site-title]',
-					'type'      => 'control',
-					'control'   => 'ast-toggle-control',
-					'default'   => astra_get_option( 'display-site-title' ),
-					'section'   => 'title_tagline',
-					'title'     => __( 'Display Site Title', 'astra' ),
-					'priority'  => 7,
-					'transport' => 'postMessage',
-					'partial'   => array(
-						'selector'            => '.site-branding',
-						'container_inclusive' => true,
-						'render_callback'     => 'Astra_Builder_Header::site_identity',
-					),
-					'context'   => Astra_Builder_Helper::$general_tab,
+					'name'     => ASTRA_THEME_SETTINGS . '[header-logo-color]',
+					'default'  => astra_get_option( 'header-logo-color' ),
+					'type'     => 'control',
+					'control'  => 'ast-color',
+					'section'  => 'title_tagline',
+					'priority' => 5,
+					'context'  => Astra_Builder_Helper::$design_tab,
+					'title'    => __( 'Logo Color', 'astra' ),
+					'divider'  => array( 'ast_class' => 'ast-section-spacing' ),
+				),
+				
+				/**
+				 * Option: Header logo color description.
+				 */
+				array(
+					'name'     => ASTRA_THEME_SETTINGS . '[header-logo-color-notice]',
+					'type'     => 'control',
+					'control'  => 'ast-description',
+					'section'  => 'title_tagline',
+					'priority' => 5,
+					'label'    => '',
+					'context'  => Astra_Builder_Helper::$design_tab,
+					'help'     => __( 'Use it with transparent images for optimal results.', 'astra' ),
 				),
 
 				// Option: Site Title Color.
@@ -110,6 +134,22 @@ if ( class_exists( 'Astra_Customizer_Config_Base' ) ) {
 					'context'   => Astra_Builder_Helper::$design_tab,
 				),
 
+
+				/**
+						 * Option: Divider
+						 */
+				array(
+					'name'     => ASTRA_THEME_SETTINGS . '[' . $_section . '-margin-divider]',
+					'section'  => $_section,
+					'title'    => __( 'Spacing', 'astra' ),
+					'type'     => 'control',
+					'control'  => 'ast-heading',
+					'priority' => 220,
+					'settings' => array(),
+					'context'  => Astra_Builder_Helper::$design_tab,
+					'divider'  => array( 'ast_class' => 'ast-section-spacing' ),
+				),
+
 				/**
 				 * Option: Margin Space
 				 */
@@ -132,6 +172,7 @@ if ( class_exists( 'Astra_Customizer_Config_Base' ) ) {
 						'left'   => __( 'Left', 'astra' ),
 					),
 					'context'           => Astra_Builder_Helper::$design_tab,
+					'divider'           => array( 'ast_class' => 'ast-section-spacing' ),
 				),
 
 			);

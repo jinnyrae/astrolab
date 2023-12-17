@@ -58,7 +58,10 @@ if ( ! function_exists( 'astra_single_post_class' ) ) {
 
 		// Blog layout.
 		if ( is_singular() ) {
-			$classes[] = 'ast-article-single';
+
+			if ( ! in_array( 'ast-related-post', $classes ) ) {
+				$classes[] = 'ast-article-single';
+			}
 
 			// Remove hentry from page.
 			if ( 'page' == get_post_type() ) {
@@ -71,40 +74,6 @@ if ( ! function_exists( 'astra_single_post_class' ) ) {
 }
 
 add_filter( 'post_class', 'astra_single_post_class' );
-
-/**
- * Prints HTML with meta information for the current post-date/time and author.
- */
-if ( ! function_exists( 'astra_single_get_post_meta' ) ) {
-
-	/**
-	 * Prints HTML with meta information for the current post-date/time and author.
-	 *
-	 * @param boolean $echo   Output print or return.
-	 * @return string|void
-	 */
-	function astra_single_get_post_meta( $echo = true ) {
-
-		$enable_meta       = apply_filters( 'astra_single_post_meta_enabled', '__return_true' );
-		$post_meta         = astra_get_option( 'blog-single-meta' );
-		$current_post_type = get_post_type();
-		$post_type_array   = apply_filters( 'astra_single_post_type_meta', array( 'post' ) );
-
-		$output = '';
-		if ( is_array( $post_meta ) && ( in_array( $current_post_type, $post_type_array ) || 'attachment' == $current_post_type ) && $enable_meta ) {
-
-			$output_str = astra_get_post_meta( $post_meta );
-			if ( ! empty( $output_str ) ) {
-				$output = apply_filters( 'astra_single_post_meta', '<div class="entry-meta">' . $output_str . '</div>', $output_str ); // WPCS: XSS OK.
-			}
-		}
-		if ( $echo ) {
-			echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-		} else {
-			return $output;
-		}
-	}
-}
 
 /**
  * Template for comments and pingbacks.
@@ -149,8 +118,8 @@ if ( ! function_exists( 'astra_theme_comment' ) ) {
 						<div class='ast-comment-avatar-wrap'><?php echo get_avatar( $comment, 50 ); ?></div><!-- Remove 1px Space
 						-->
 								<?php
-								astra_markup_open( 'ast-comment-data-wrap' ); 
-								astra_markup_open( 'ast-comment-meta-wrap' ); 
+								astra_markup_open( 'ast-comment-data-wrap' );
+								astra_markup_open( 'ast-comment-meta-wrap' );
 								echo '<header ';
 								echo astra_attr(
 									'commen-meta-author',
@@ -166,7 +135,7 @@ if ( ! function_exists( 'astra_theme_comment' ) ) {
 											array(
 												'open'  => '<div %s>',
 												'class' => 'ast-comment-cite-wrap',
-											) 
+											)
 										) . '<cite><b class="fn">%1$s</b> %2$s</cite></div>',
 										get_comment_author_link(),
 										// If current post author is also comment author, make it known visually.
@@ -181,8 +150,8 @@ if ( ! function_exists( 'astra_theme_comment' ) ) {
 												array(
 													'open' => '<div %s>',
 													'class' => 'ast-comment-time',
-												) 
-											) 
+												)
+											)
 										) . '<span  class="timendate"><a href="%1$s"><time datetime="%2$s">%3$s</time></a></span></div>',
 										esc_url( get_comment_link( $comment->comment_ID ) ),
 										esc_attr( get_comment_time( 'c' ) ),

@@ -1,0 +1,80 @@
+2023-10-06T15:43:12+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('index.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'index.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/index.php(114): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:43:21+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('update-core.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'update-core.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/update-core.php(980): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:13+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('index.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'index.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/index.php(114): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:18+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('index.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'index.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/index.php(114): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:33+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('themes.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'themes.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/themes.php(244): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:42+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('index.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'index.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/index.php(114): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:47+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('nav-menus.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'nav-menus.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/nav-menus.php(663): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
+2023-10-06T15:44:55+00:00 CRITICAL Uncaught Error: Call to undefined function str_contains() in /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php:36
+Stack trace:
+#0 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(292): GS_Plugins_Common_Pages->scripts('index.php')
+#1 /Applications/MAMP/htdocs/astrolab/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/astrolab/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/astrolab/wp-admin/admin-header.php(102): do_action('admin_enqueue_s...', 'index.php')
+#4 /Applications/MAMP/htdocs/astrolab/wp-admin/index.php(114): require_once('/Applications/M...')
+#5 {main}
+  thrown dans /Applications/MAMP/htdocs/astrolab/wp-content/plugins/gs-logo-slider/includes/gs-common-pages/gs-plugins-common-pages.php à la ligne 36
+
